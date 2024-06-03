@@ -46,12 +46,10 @@ def ordenar(paths):
 
 def create_dictionary_from_path(path):
     dir_path = Path(path)
-    print(os.getcwd())
     #Por preferencia, crearé un diccionario de los path de las imagenes. El key sera el path general y los values seran las listas que contendran los nombres de los archivos
     folders = [folder for folder in os.listdir(dir_path)]
     #Join paths 
     new_paths = [os.path.join(dir_path,name) for name in folders]
-    print(new_paths)
     diccionario_paths = {}
     #Crear diccionarios de los paths y los archivos dentro
     for path_name in new_paths:
@@ -87,6 +85,8 @@ def renombrar(route, sign_type):
     except Exception as e:
         print(e)
 
+diccionario_revisar = create_dictionary_from_path(".\\datasets\\asl_alphabet_train\\asl_alphabet_train")
+list_sizes = [int(len(diccionario_revisar[key])) for key in diccionario_revisar.keys()]
 
 
 
