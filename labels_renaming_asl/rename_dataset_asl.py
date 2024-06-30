@@ -85,8 +85,8 @@ def renombrar(route, sign_type):
     except Exception as e:
         print(e)
 
-diccionario_revisar = create_dictionary_from_path(".\\datasets\\asl_alphabet_train\\asl_alphabet_train")
-list_sizes = [int(len(diccionario_revisar[key])) for key in diccionario_revisar.keys()]
+'''diccionario_revisar = create_dictionary_from_path(".\\datasets\\asl_alphabet_train\\asl_alphabet_train")
+list_sizes = [int(len(diccionario_revisar[key])) for key in diccionario_revisar.keys()]'''
 
 
 

@@ -1,9 +1,9 @@
 import os
 from rename_dataset_asl import ordenar,create_dictionary_from_path,list_sizes
 
-print(list_sizes)
+'''print(list_sizes)
 suma = sum(list_sizes)
-print(suma)
+print(suma)'''
 
 def renombrar(route, sign_type):
     diccionario_paths = create_dictionary_from_path(route)

@@ -3,10 +3,10 @@ from pathlib import Path
 from rename_dataset_asl import create_dictionary_from_path
 
 #Comprobar cantidad de elementos que hay en cada directorio
-diccionario_dataset = create_dictionary_from_path(".\datasets\ASL_Dataset_Combination")
+'''diccionario_dataset = create_dictionary_from_path(".\datasets\ASL_Dataset_Combination")
 amount_list = [int(len(diccionario_dataset[key])) for key in diccionario_dataset.keys()]
 total_imagenes = sum(amount_list)
-print(total_imagenes)
+print(total_imagenes)'''
 
 
 def renombrar(route, sign_type):
@@ -22,4 +22,4 @@ def renombrar(route, sign_type):
     except Exception as e:
         print(e)
 
-renombrar(".\datasets\SigNN Character Database","_ASL")
+'''renombrar(".\datasets\SigNN Character Database","_ASL")'''
